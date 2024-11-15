@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+ container_name: flask-app-container  # Optional: Name the container
+    restart: always  # Optional: Ensure the container restarts on failure
